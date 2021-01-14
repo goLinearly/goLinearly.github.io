@@ -12,27 +12,16 @@ body {
 
 
 #top {
-    display: grid;
-    width: 50%;
-    margin: 0 auto;
-    margin-top:3rem;
-    border-left:2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-radius: 0 0 1rem 1rem;
-}
-
-#top img {
-    width: 15%;
+    display: block; 
+    width: 100%;
+    height:auto;
     margin: 0 auto;
     
+    background-color: rgb(188, 221, 187);
 }
 
-#top h1 {
-    display: none;
-    margin: 0 auto;
-    
-}
+
+
 
 #top p {
     font-size: 2.5rem;
@@ -42,7 +31,7 @@ body {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 20px;
     
     
 
@@ -53,7 +42,7 @@ body {
 #grid {
     display: grid;
     margin: 0 auto;
-    
+    background-color:rgb(188, 221, 187);
     padding: 1rem;
     
 }
@@ -69,22 +58,21 @@ body {
 #grid p {
     font-size: 0.9rem;
     color:rgb(126, 108, 108);
-    
     margin: 0 auto;
     
 }
 
 #navigation ol {
-    padding: 1rem 2rem;
+    padding: 0.5rem 0.2rem;
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(126, 108, 108);
+    background-color: rgb(114, 179, 128);
 
 }
 
 #navigation ol:hover {
-    background-color: rgb(158, 151, 151);
-    padding: 25px 0;
+    background-color: rgb(93, 150, 82);
+    padding: 0.9rem 0;
     transition: 0.5s ease-in-out;
 }
 
@@ -215,5 +203,74 @@ body {
 #footer p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:rgb(126, 108, 108);
+}
+
+@media (max-width: 1024px) {
+    body {
+       background-color:rgb(215, 233, 219);
+    }
+
+    #top {
+        background-color: white;
+    }
+
+    #top p {
+        width: 50%;
+        font-size: 40px;
+        color:rgb(93, 110, 87);
+    }
+
+    #navigation ol li {
+        margin: 0.5rem;
+    }
+    #navigation ol li a {
+        font-size: 0.8rem;
+    }
+
+    #grid {
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+    }
+
+    #grid h3 {
+        width: 80%;
+        text-align: left;
+        color:rgb(93, 110, 87);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #grid p {
+        width: 80%;
+        text-align: left;
+        color:rgb(93, 110, 87);
+    }
+
+    #article {
+        display: block;
+
+    }
+
+    #article ol li {
+        display: inline;
+        margin: 0 0.5rem;
+    }
+
+    #article ol li a {
+        font-size: 0.5rem
+    }
+
+    #article .content {
+        border:none;
+    }
+
+    #article .content h3 {
+        font-size: 1.3rem;
+        color: rgb(93, 110, 87);
+    }
+
+    #article .content p {
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
 }
 
