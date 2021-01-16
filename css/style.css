@@ -7,7 +7,7 @@
 body {
     margin: 0 auto;
     width: 100%;
-    background-color: white;
+    background-color: rgb(203, 206, 223);
 }
 
 
@@ -17,16 +17,16 @@ body {
     height:auto;
     margin: 0 auto;
     
-    background-color: white;
+    background-color:  rgb(203, 206, 223);
 }
 
 
 
 
 #top p {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     font-weight: 800;
-    font-family: font-family: 'Karla', sans-serif;
+    font-family: 'Sunflower', sans-serif;
     color: #5271ff;
     margin: 0 auto;
     width: 100%;
@@ -42,7 +42,7 @@ body {
 #grid {
     display: grid;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(203, 206, 223);
     padding: 1rem;
     
 }
@@ -87,6 +87,8 @@ body {
 #navigation ol li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: 'Poor Story', cursive;
+    font-size: 1.5rem;
 }
 
 #navigation ol li a:hover {
@@ -138,6 +140,7 @@ body {
 }
 
 #article ol li a {
+    font-family: 'Poor Story', cursive;
     text-decoration: none;
     font-size: 15px;
     color: black;
@@ -181,7 +184,9 @@ body {
 }
 
 #article .content h3 {
-    font-size: 2.0rem;
+    font-size: 2.3rem;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
     color:#5271ff;
     margin: 0;
     padding: 50px;
@@ -220,11 +225,11 @@ body {
 
 @media (max-width: 1024px) {
     body {
-       background-color:#5271ff;
+       background-color:rgb(58, 83, 116);
     }
 
     #top {
-        background-color: #5271ff;
+        background-color:rgb(58, 83, 116);
     }
 
     #top p {
@@ -234,7 +239,7 @@ body {
     }
 
     #navigation ol:hover {
-        background-color: rgb(58, 83, 116);
+        background-color: #5271ff;
     }
 
     #navigation ol li {
@@ -251,7 +256,7 @@ body {
     #grid {
         display:none;
         grid-template-columns: 1fr 1fr;
-        background-color: #5271ff;
+        background-color: :rgb(58, 83, 116);
     }
 
 
@@ -259,6 +264,11 @@ body {
     #article {
         display: block;
 
+    }
+
+    #article ol {
+        width: 100%;
+        margin: 0 auto;
     }
 
     #article ol li {
@@ -280,18 +290,22 @@ body {
     }
 
     #article .content h3 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         color: rgb(255, 255, 255);
+        padding-bottom: 0;
     }
 
     #article .content p {
-        font-size: 0.7rem;
-        line-height: 1.3rem;
-        color:rgb(218, 214, 214)
+        font-size: 1rem;
+        line-height: 2.1rem;
+        color:rgb(236, 223, 223)
     }
 
     #article .content a {
-        color:rgb(32, 21, 70)
+        color:rgb(54, 54, 50);
+        background-color: white;
+        border-radius: 3px;
+        padding: 3px;
     }
 
     #footer p {
